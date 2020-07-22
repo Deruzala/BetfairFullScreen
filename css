@@ -1,0 +1,151 @@
+#playerContainer {
+    height: 100vh;
+    width: 100%;
+}
+
+#playerIframe {
+    /*height: calc(100vh - 139px); 2 rows */
+    /* 1 row */
+    height: calc(100vh - 87px);
+    max-width: 100%;
+    width: 100%;
+}
+
+.event-filers {
+    background: url("http://1.bp.blogspot.com/-Ts_0-ndNS8A/UnevuuPxFgI/AAAAAAAAABo/dWmGC8rTyb8/s1600/arrow-circle-up.png") no-repeat 50% 6px #FFF
+;
+    padding: 7px 14px 7px;
+}
+
+.header-wrapper, #selectLabelId, .event-filers h3, .event-filers p, #warningDiv, .footer, .comments, .clip-info-inner br, .mobile-footer {
+    display: none;
+}
+
+.left-side {
+    /*height: calc(100vh - 139px); 2 rows */
+    /* 1 row */
+    height: calc(100vh - 87px);
+}
+
+.page-content, .left-side, .right-side {
+    float: none;
+    padding: 0;
+    width: 100%;
+}
+
+.right-side {
+    -webkit-transition: all 0.5s linear;
+    background: #f1f1f1;
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+.right-side:hover {
+    /*max-height: calc(250px + 33px);
+    height: calc(250px + 33px);*/
+    margin: -105px 0 0;
+}
+
+.right-side:hover .event-filers {
+    position: relative;
+}
+
+.right-side:hover .streaming-list {
+    height: 156px;
+    max-height: 156px;
+}
+
+.streaming-list {
+    -webkit-transition: all 0.5s linear;
+    /*max-height: 104px; 2 rows */
+    /* 1 row */
+    height: 52px;
+    margin: 2px 0 0;
+    max-height: 52px;
+    transition: all 0.5s linear;
+}
+
+.streaming-list .clip {
+    float: left;
+    width: 33.3333%;
+}
+
+.streaming-list .clip .play {
+    width: 6.5%;
+}
+
+.streaming-list .clip-bet {
+    text-align: center;
+}
+
+.streaming-list .clip-bet .bet-now-btn {
+    margin-right: 0;
+}
+
+.streaming-list .clip-info {
+    padding: 8px 0;
+    width: 75%;
+}
+
+.streaming-list .clip-info .clip-info-title {
+    display: block;
+    height: 18px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+  .streaming-list .clip {    
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .streaming-list .clip {    
+    width: 100% !important;
+  }
+  .page-content .event-filers {    
+    display: block;    
+    position: relative;    
+    border: none;    
+    top: unset;    
+    right: unset;    
+    padding: 10px 14px 1px !important;    
+    background: #FFF !important;
+  }
+  .show-on-mobile, #filters br {    
+    display: none;
+  }
+  .event-filers select {    
+    margin-bottom: 8px;
+  }
+  .streaming-list, .right-side:hover .streaming-list {    
+    max-height: 156px !important;    
+    height: 156px !important;
+  }
+  .left-side {    
+    height: calc(100vh - 223px) !important;
+  }
+  #playerIframe {    
+    height: calc(100vh - 223px) !important;
+  }
+  .right-side:hover {    
+    margin: 0 !important;
+  }
+  .right-side:hover .event-filers {    
+    position: initial !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .clip-bet {    
+    display: none;
+  }
+  .streaming-list .clip-info {    
+    width: 93.5% !important;
+  }
+}
+
+body {
+    overflow: hidden;
+}
+
