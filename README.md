@@ -1,4 +1,4 @@
-# BetfairFullScreen
+# Betfair Full Screen 
 
 Fullscreen Betfair Video on Chrome
 
