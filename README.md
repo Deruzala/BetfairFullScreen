@@ -1,6 +1,4 @@
-# Betfair Full Screen 
-
-Fullscreen Betfair Video on Chrome
+# Betfair-Full-Screen 
 
 Install Stylebot
 
